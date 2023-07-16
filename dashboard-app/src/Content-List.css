@@ -1,0 +1,12 @@
+.Content-List {
+    margin: 4px;
+    width: 15%;
+    box-sizing: border-box;
+    border-radius: 18px;
+    background-color: #1e1e1e;
+}
+
+.Content-Menu {
+    padding: 8px;
+    text-align: left;
+}

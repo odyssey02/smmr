@@ -1,0 +1,7 @@
+.Test-Content {
+    margin: 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #3e3e3e;
+    overflow: hidden;
+}
