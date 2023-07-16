@@ -6,7 +6,7 @@ import TestContent from "./Test-Content";
 
 function ContentList(props) {
     return (
-        <div className="Content-List">
+        <div className="Content-List Panel-Common">
             <div className="Content-Menu">
                 <button className="Content-Clear" onClick={(event)=>{
                     event.preventDefault();

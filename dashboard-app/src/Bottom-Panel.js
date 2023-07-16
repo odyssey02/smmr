@@ -4,7 +4,7 @@ import "./Bottom-Panel.css";
 
 function BottomPanel() {
     return (
-        <div className="Bottom-Panel">
+        <div className="Bottom-Panel Panel-Common">
         </div>
     );
 }

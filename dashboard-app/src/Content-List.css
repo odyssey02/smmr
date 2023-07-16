@@ -1,9 +1,6 @@
 .Content-List {
-    margin: 4px;
     width: 15%;
-    box-sizing: border-box;
-    border-radius: 18px;
-    background-color: #1e1e1e;
+    flex-direction: column;
 }
 
 .Content-Menu {

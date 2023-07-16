@@ -1,8 +1,10 @@
 .Test-Main {
     flex: 1;
     display: flex;
-    margin: 4px;
+    flex-direction: column;
+    margin: 12px;
+    padding: 12px;
     box-sizing: border-box;
     border-radius: 18px;
-    background-color: #1e1e1e;
+    background-color: #202020;
 }

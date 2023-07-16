@@ -4,7 +4,7 @@ import "./Test-Content.css";
 
 function TestContent(props) {
     return (
-        <div className="Test-Content" onClick={(event)=>{
+        <div className="Test-Content Pitem-Common" onClick={(event)=>{
             event.preventDefault();
             props.onClick();
         }}>

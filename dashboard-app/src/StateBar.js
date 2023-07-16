@@ -6,7 +6,7 @@ import ClockShow from "./ClockShow";
 
 function StateBar(props) {
     return (
-        <div className="StateBar">
+        <div className="StateBar Panel-Common">
             <div className="StateBar-Left">
                 <button className="StateBar-SetButton" onClick={(event)=>{
                     event.preventDefault();

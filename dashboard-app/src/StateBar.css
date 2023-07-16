@@ -1,11 +1,5 @@
 .StateBar {
-    display: flex;
-    flex-direction: row;
-    margin: 4px;
     height: 36px;
-    box-sizing: border-box;
-    border-radius: 18px;
-    background-color: #1e1e1e;
 }
 .StateBar-Left {
     flex: 0 1 auto;

@@ -6,6 +6,7 @@ function TestMain(props) {
     return (
         <div className="Test-Main">
             <h1>TestMain</h1>
+            <hr/>
         </div>
     );
 }
