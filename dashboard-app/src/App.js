@@ -12,12 +12,13 @@ import SettingModal from './Setting-Modal';
 function App() {
   const [centerContent, setCenterContent] = useState(false);
   const [EnSetModal, setEnSetModal] = useState(false);
-  const settings = {};
-  [settings.EnStaBar, settings.setEnStaBar] = useState(true);
+  const [AppSettings, setAppsettings] = useState({  // App Settings(앱 전역세팅)
+    EnStaBar: true,
+  });
 
   return (
     <div className="App">
-      {settings.EnStaBar && <StateBar onClickSetButton={()=>{setEnSetModal(true);}}/>}
+      {AppSettings.EnStaBar && <StateBar onClickSetButton={()=>{setEnSetModal(true);}}/>}
       <div className="App-Content">
         <ContentList onClickClear={()=>{setCenterContent(false);}} onClickContent={(SelectList)=>{setCenterContent(SelectList);}}/>
         <div className="Outer-Space">
@@ -25,8 +26,8 @@ function App() {
           <BottomPanel />
         </div>
       </div>
-      {settings.EnStaBar || <StateBar onClickSetButton={()=>{settings.setEnStaBar(!settings.EnStaBar);}}/>}
-      {EnSetModal && <SettingModal onClickClose={()=>{setEnSetModal(false);}}/>}
+      {AppSettings.EnStaBar || <StateBar onClickSetButton={()=>{setEnSetModal(true);}}/>}
+      {EnSetModal && <SettingModal setList={AppSettings} changeSetList={setAppsettings} onClickClose={()=>{setEnSetModal(false);}}/>}
     </div>
   );
 }
