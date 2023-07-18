@@ -20,13 +20,13 @@ export function WeatherSide(props) {
 
 export function WeatherMain(props) {
     return (
-        <div className="Weather-Main Panel-Common">
+        <div className="Weather-Main Main-Common">
             <div className="WeatherMain-Title">
                 <h1>날씨</h1>
             </div>
             <hr/>
             <div className="WeatherMain-Body">
-                <a>부가정보</a>
+                <a>메인</a>
             </div>
         </div>
     );
