@@ -20,7 +20,7 @@ function App() {
     <div className="App">
       {AppSettings.EnStaBar && <StateBar onClickSetButton={()=>{setEnSetModal(true);}}/>}
       <div className="App-Content">
-        <ContentList onClickClear={()=>{setCenterContent(false);}} onClickContent={(SelectList)=>{setCenterContent(SelectList);}}/>
+        <ContentList onClickClear={()=>{setCenterContent(false);}} onClickContent={setCenterContent}/>
         <div className="Outer-Space">
           <CenterSpace title={centerContent}/>
           <BottomPanel />
