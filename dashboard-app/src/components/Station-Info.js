@@ -26,7 +26,7 @@ export function StationInfoMain(props) {
             </div>
             <hr/>
             <div className="StationInfoMain-Body">
-                <a>메인 브랜치 커밋 테스트</a>
+                <a>메인 브랜치 커밋 테스트22</a>
             </div>
         </div>
     );
