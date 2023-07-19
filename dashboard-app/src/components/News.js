@@ -26,7 +26,7 @@ export function NewsMain(props) {
             </div>
             <hr/>
             <div className="NewsMain-Body">
-                <a>메인</a>
+                <a>뉴스걍 보지 맙시다</a>
             </div>
         </div>
     );
