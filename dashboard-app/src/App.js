@@ -9,9 +9,9 @@ import BottomPanel from './Bottom-Panel';
 import CenterSpace from './Center-Space';
 import SettingModal from './Setting-Modal';
 
-function App() {
-  const [centerContent, setCenterContent] = useState(false);
-  const [EnSetModal, setEnSetModal] = useState(false);
+function App() {  // App Main Component(앱 메인 컴포넌트)
+  const [centerContent, setCenterContent] = useState(false); // Center Content(중앙 컨텐츠)
+  const [EnSetModal, setEnSetModal] = useState(false);  // Setting Modal(세팅 모달)
   const [AppSettings, setAppsettings] = useState({  // App Settings(앱 전역세팅)
     EnStaBar: true,
   });
