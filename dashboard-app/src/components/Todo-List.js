@@ -2,6 +2,19 @@
 import React, {useState, useEffect} from "react";
 import "../styles/Todo-List.css";
 
+/* 버튼 이벤트 미완성
+const addBtn = document.getElementById('imgBtn');
+const addList = document.getElementById('addText');
+
+addBtn.addEventListener("click", function() {
+    if(addList.style.display=='none'){ 		
+    	addList.style.display = 'block'; 	
+    }else{ 		
+    	addList.style.display = 'none'; 	
+    }
+  });
+  */
+
 export function TodoListSide(props) {
     return (
         <div className="TodoList-Side Pitem-Common" onClick={(event)=>{
@@ -26,15 +39,19 @@ export function TodoListMain(props) {
             </div>
             <hr/> <br/>
             <div className="TodoListMain-Body">
-                <form>
+                <form id="list">
                     <label><input type="checkbox"></input> 미용실 가기 </label><br/>
                     <label><input type="checkbox"></input> 우체국 가기 </label><br/>
                     <label><input type="checkbox"></input> 할 일 1 </label><br/>
                     <label><input type="checkbox"></input> 할 일 2 </label><br/>
                 </form>
+                <div id="addText">
+                    <input type="text" placeholder="할 일 추가하기" id="addList" autoFocus></input>
+                    <button type="button" id="listBtn">+</button>
+                </div>
             </div>
             <div className="add">
-                <input type="button"></input>
+                <input type="button" id="imgBtn"></input>
             </div>
         </div>
     );
