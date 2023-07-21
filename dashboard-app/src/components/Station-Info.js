@@ -1,8 +1,34 @@
 /* eslint-disable */
 import React, {useState, useEffect} from "react";
+import axios from "axios";
 import "../styles/Station-Info.css";
 
+const { REACT_APP_BUS_API_KEY } = process.env;
+
+let Businfo ={};
+function getBusInfo() {
+    let url = "http://apis.data.go.kr/6410000/busarrivalservice/getBusArrivalList";
+    let queryParams = '?' + encodeURIComponent('serviceKey') + '=' + REACT_APP_BUS_API_KEY; /* Service Key*/
+    queryParams += '&' + encodeURIComponent('stationId') + '=' + encodeURIComponent('200000078'); /**/
+
+    axios.get(url+queryParams).then((response) => {
+        Businfo = response.data;
+        console.log(Businfo);
+    }).catch((error) => {
+        console.log(error);
+    });
+}
+
 export function StationInfoSide(props) {
+
+    useEffect(() => {
+        getBusInfo();
+        const refreshBus = setInterval(getBusInfo, 15000);
+        return function cleanup() {
+            clearInterval(refreshBus);
+        };
+    });
+
     return (
         <div className="StationInfo-Side Pitem-Common" onClick={(event)=>{
             event.preventDefault();
