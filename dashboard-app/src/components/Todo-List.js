@@ -2,18 +2,18 @@
 import React, {useState, useEffect} from "react";
 import "../styles/Todo-List.css";
 
-/* 버튼 이벤트 미완성
-const addBtn = document.getElementById('imgBtn');
-const addList = document.getElementById('addText');
-
-addBtn.addEventListener("click", function() {
-    if(addList.style.display=='none'){ 		
-    	addList.style.display = 'block'; 	
-    }else{ 		
-    	addList.style.display = 'none'; 	
+/* 플러스 버튼 클릭 시 텍스트상자 show  */
+ const addBtn = document.getElementById('imgBtn');
+ const addList = document.getElementById('addText');
+ 
+ addBtn.addEventListener("click", function() {
+    if(addList.style.display=='none'){
+        addList.style.display = 'block';
     }
-  });
-  */
+    else{
+        addList.style.display = 'none';
+    }
+ });
 
 export function TodoListSide(props) {
     return (
