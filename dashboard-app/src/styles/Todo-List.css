@@ -4,9 +4,21 @@ h1 {
 .TodoListMain-Body {
   margin-left: 10px;
 }
-form {
+.showList{
   font-family: monospace;
   font-size: 18px;
+}
+.showList li{
+  width: 650px;
+  list-style: none;
+  line-height: 40px; 
+  position: relative;
+  margin-bottom: 5px;
+  text-indent: 15px; 
+  color: white;
+  border-radius: 3px;
+  font-weight: 400;
+  cursor: pointer;
 }
 
 [input=text] {
@@ -18,7 +30,7 @@ form {
   display: none;
 }
 
-#imgBtn {
+#addBtn {
   display: block;
   background: url("../media/plus.png") no-repeat;
   background-size: 100px;
@@ -35,17 +47,22 @@ form {
 }
 
 /* 리스트 작성 input */
-.addText #listBtn {
-  cursor: pointer;
+#listBtn {
+  font-size: 15px;
 }
-.addText #addList {
-  width: 500px;
+#textBox {
+  width: 700px;
+  font-size: 15px;
 }
 
 /* 리스트 추가버튼 */
-#imgBtn:hover {
+#addBtn:hover {
   box-shadow: 200px 0 0 0 rgba(0,0,0,0.25) inset, -200px 0 0 0 rgba(0,0,0,0.25) inset;
 }
-#imgBtn:active {
+#addBtn:active {
   box-shadow: 200px 0 0 0 rgba(255, 255, 255, 0.25) inset, -200px 0 0 0 rgba(255, 255, 255, 0.25) inset;
+}
+
+.footer {
+  margin-top: 30px;
 }
